@@ -1,0 +1,43 @@
+UNITS_DIM_RANGE: Rental Listing- Dimensions of units should be in the range of min and max dimensions of a floor plan - %s, with Units - %s
+MIN_MAX_DIM_ERROR: Rental Listing- Min dimension cannot be greater than Max dimension for a floor plan - %s
+FLOORPLANS_DUP_NAMES: Rental Listing- Names of a floor plan should be unique with in a listing - %s
+UNITS_RENT_RANGE: Rental Listing- Rents of individual units should be in the range of min and max rents of a floor plan - %s, with Units - %s
+UNIT_AVAIL_DATE_PAST: Rental Listing- Availability of individual units should be updated to the future dates for a floor plan -
+MIN_MAX_RENT_ERROR: Rental Listing- Min rent cannot be greater than Max rent for a floor plan - %s
+SERVER_ERROR: Internal- Internal server error, Please contact administrator
+CSV_FILE_MISS: CSV file is not existing for special type -
+USER_DISABLED: User- User is not enabled -
+USER_MISS: User- User not found -
+EMPTY_USERNAME: Username- User name is empty
+NO_SAVED_SEARCH: Saved Search- No saved searches exist for user -
+INVALID_DRAFT_NAME: Draft Listing- No draft listing exists for given draft name -
+DUP_FAV_ADDRS: FavAddresses- Favorite addresses cannot be same
+WEAK_PASS: Password- Password is weak
+PASS_LEN: Password- Password length should be in between %d and %d
+INVALID_EMAIL: Email- We didn't find an account for that e-mail address
+INVALID_CUR_PASS: Password- Current password is invalid
+INVALID_PASS_LINK: Password- Oops!  This is an invalid password reset link
+INVALID_SAVED_SEARCH: Saved SearchId- Invalid saved search Id -
+INVALID_DRAFT_USER_COMB: Draft Listing- Draft listing does not exist for given user and draft name
+EMAIL_SEND_ERROR_RES: Email- Error sending an email with inline resources
+EMAIL_SEND_ERROR_MEDIA: Email- Error sending email with media
+FAV_ERROR: Favorite Listings- Error occurred retrieving favorite listings
+HIDDEN_ERROR: HIDDEN Listings- Error occurred retrieving hidden listings
+INVALID_PROF_REQ: Professional Request- Invalid professional request Id
+INVALID_LST_ID: Rental Listing- Invalid listing id-
+INVALID_USER_LISTING: Rental Listing- Listing was created by different user
+LST_STATUS_AUTH_ERROR: Rental Listing- Archived or Rejected is only allowed for Admin or CSR users
+INVALID_PROFILE_ID: Renter Profile- No renter profile exists for given profileId
+INVALID_USERID: User- User Id is not existing-
+INVALID_EMAIL_FORMAT: Email- Invalid email format
+INVALID_PHONE_FORMAT: Phone Number- Invalid phone number format
+EXISTING_EMAIL: Email- Email Id already exists
+EXISTING_USERNAME: Username- Username already exists
+PASS_REQ: Password- Password field is required
+NULL_LISTID: Listing- ListingId cannot be null
+LST_STATUS_UNTIL_DATE_ERROR: ListingStatus- Unavailable until date is required for unavailable until status
+INVALID_LST_STATUS_ERROR: ListingStatus- Invalid listing status, only allowed statues are active or reject
+APPREJ_STATUS_AUTH_ERROR: ListingStatus- Active or Reject is only allowed for Admin or CSR users
+REJ_REASON_REQ_ERROR: ListingStatus- Reject reason is required
+
+

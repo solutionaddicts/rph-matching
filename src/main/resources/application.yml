@@ -1,0 +1,102 @@
+server:
+  port: 9904
+  servlet:
+    contextPath: /rph/matching
+  ssl:
+    key-store-type: PKCS12
+    key-store: /Users/sravantatikonda/RPH/rph.p12
+    key-store-password: rph123
+    key-alias: rph
+    enabled: false
+
+auth-host: http://localhost:9906
+
+http:
+  port: 9908
+
+management:
+  server:
+    port: 8081
+
+spring:
+  application:
+    name: rph-matching
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rph_db
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        dialect: com.addicts.rph.matching.config.database.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    show-sql: true
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+      enabled: true
+
+  mail:
+    host: smtp.gmail.com
+    username: admin@matchnrent.com
+    password: 123
+    port: 587
+    smtp:
+      auth: true
+      starttls: true
+    protocol: smtp
+    debug: true
+
+
+
+
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+
+
+encrypt:
+  db_columns:
+    key: OCVARWtPbEFBZ0hyQS15OlFITSg8YzUhMXg=
+    algorithm: AES/ECB/PKCS5Padding
+
+security:
+  signing-key: bm5wVnBlOTdBOTFKMkx2MVpSaVVhb0dZS3FMVkhLcTg=
+
+# (Sunday=0 or 7)
+# format: Min Hr Day_of_month month week_day
+
+scheduled:
+  cron:
+    serviceReminder: 0 6 * * *  #Everyday at 7 AM
+    savedSearchDaily: 0 15 * * *  # Everyday at 4 PM
+    archiveReportedListings: 0 1 * * *  # Everyday at 1 AM
+
+
+
+# SSL, post 465
+#spring.mail.properties.mail.smtp.socketFactory.port = 465
+#spring.mail.properties.mail.smtp.socketFactory.class = javax.net.ssl.SSLSocketFactory
+
+# AWS Configuration
+amazonproperties:
+  endpointUrl: https://rph-assets.s3.us-east-2.amazonaws.com
+  assetsBucketName: rph-assets
+  imgFolder: images
+  vidFolder: videos
+  region: us-east-2
+  accessKey: key
+  secretKey: secret
+  blogFolder: blogs
