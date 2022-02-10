@@ -165,7 +165,7 @@
     <dependency>
       <artifactId>hibernate-core</artifactId>
       <groupId>org.hibernate</groupId>
-      <version>5.4.3.Final</version>
+      <version>5.4.24.Final</version>
     </dependency>
     <dependency>
       <artifactId>lombok</artifactId>
